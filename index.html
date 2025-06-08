@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        background-color: plum;
+    }
+
+    .container{
+        
+        padding: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .nameerror,.emailerror,.passworderror {
+        color: red;
+        display: none;
+    }
+
+    #name,#email,#password{
+        margin-top: 10px;
+        width: 300px;
+    }
+    
+    #submit{
+        width: 310px;
+        margin-top: 10px;
+        background-color: cornflowerblue;
+        color: black;
+    }
+
+
+
+    
+</style>
+
+<body>
+    <div class="container">
+        <form>
+            
+            <div>
+                <input type="text" placeholder="Name" id="name">
+                <span class="nameerror">Name must contain only letter</span>
+            </div>
+            <div>
+                <input type="email" placeholder="Email" id="email">
+            <span class="emailerror">Please provide valid gmail address</span>
+            </div>
+            <div>
+                <input type="password" placeholder="password" id="password">
+            <span class="passworderror">Please provide valid password</span>
+            </div>
+            <div>
+                <input type="submit" disabled id="submit">
+            </div>
+
+            
+
+            
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+
+</html>
